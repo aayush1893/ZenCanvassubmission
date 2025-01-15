@@ -1,47 +1,100 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
 # ZenCanvas
+
+**ZenCanvas** is a mindfulness app designed to help users express their emotions through art and relaxation. It features tools to create symmetrical mandalas, calming breathing exercises, grounding games, and a gallery to store and revisit your artwork.
+
+---
+
+## Table of Contents
+
+- [Features](#features)
+- [Setup and Installation](#setup-and-installation)
+- [How to Use ZenCanvas](#how-to-use-zencanvas)
+  - [Creating a Mandala](#creating-a-mandala)
+  - [Gallery](#gallery)
+  - [Breathing Game](#breathing-game)
+  - [Grounding Game](#grounding-game)
+- [Technologies Used](#technologies-used)
+- [Troubleshooting](#troubleshooting)
+- [Acknowledgments](#acknowledgments)
+
+---
+
+## Features
+
+- **Mandala Drawing**: Create intricate symmetrical patterns using custom brush sizes, colors, and symmetry settings.
+- **Gallery**: Save and view your artwork.
+- **Breathing Exercises**: Follow a guided breathing exercise to relax and center yourself.
+- **Grounding Games**: Engage in mindfulness exercises to stay grounded.
+- **Background Music**: Continuous calming music with a toggle mute feature.
+- **User Management**: Users are prompted to enter a unique ID or name at every session start.
+
+---
+
+## Setup and Installation
+
+### Prerequisites
+
+1. Node.js and npm installed on your system.
+2. Git installed for cloning the repository.
+
+### Steps
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/aayush1893/ZenCanvassubmission.git
+   cd ZenCanvassubmission
+
+2. Install dependencies:
+
+bash
+Copy code
+npm install
+Start the application:
+
+bash
+Copy code
+npm start
+The app will open in your default browser at http://localhost:3000.
+
+How to Use ZenCanvas
+1. Creating a Mandala
+Navigate to the ZenPattern section.
+Customize your brush size, symmetry settings, and color palette.
+Start drawing on the canvas, and the app will mirror your strokes symmetrically.
+Save your artwork to the Gallery using the Save Mandala button.
+2. Gallery
+Access the Gallery to view your saved mandalas.
+Files are listed with thumbnails, and you can download them or revisit your creations.
+3. Breathing Game
+Choose the Ocean Breathing option.
+Follow the guided visual cues to inhale, hold, and exhale.
+Use the breathing exercise to relax and reduce stress.
+4. Grounding Game
+Select the Grounding Game to engage in a simple mindfulness activity.
+Focus on sensory inputs (what you see, hear, feel) to stay present.
+5. Background Music
+Calming background music plays automatically when the app starts.
+Use the Mute/Unmute button in the header to toggle music.
+Technologies Used
+Frontend: React.js, TypeScript
+State Management: React Hooks
+Styling: CSS, Tailwind
+Animations: Framer Motion
+Backend: AWS S3 for storing mandalas
+Storage: LocalStorage for gallery and user management
+Music: Background audio loop using HTML5 audio API
+Troubleshooting
+Issue: Gallery not showing saved files
+Ensure you’re logged in with the same user ID.
+Verify that saved files are stored in LocalStorage or AWS S3.
+Issue: Music not playing
+Check if your browser has blocked autoplay for audio.
+Refresh the app or unmute using the toggle button.
+Issue: Unable to save mandala
+Ensure proper permissions are set for AWS S3 bucket.
+Verify network connectivity.
+Acknowledgments
+ZenCanvas is inspired by my journey as a former dentist turned data analyst and my desire to help individuals improve their mental well-being. This app is a step toward making mindfulness accessible and engaging.
+
+Thank you for using ZenCanvas. If you have any questions or feedback, feel free to raise an issue in the repository or contact me directly.
+  
