@@ -1,0 +1,11 @@
+[33mcommit f395cc7686ab23dfaebe58feec3f752ff670bd3a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Aayush Sisodia <aayushsisodia19@gmail.com>
+Date:   Tue Jan 14 19:15:42 2025 -0500
+
+    Remove .env from repository
+
+[33mcommit ce7e8fe6bb99e0799ac55bb5c79e4d5f0090fd40[m
+Author: Aayush Sisodia <aayushsisodia19@gmail.com>
+Date:   Tue Jan 14 18:56:59 2025 -0500
+
+    Initial ZenCanvas project setup and app features added
